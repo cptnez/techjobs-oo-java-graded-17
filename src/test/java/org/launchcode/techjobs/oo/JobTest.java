@@ -30,6 +30,7 @@ public class JobTest {
             new CoreCompetency("")) ;
 
 
+
     @Test
     public void testSettingJobId(){
         assertNotEquals(jobOne.getId(), jobTwo.getId());
@@ -61,28 +62,28 @@ public class JobTest {
     public void testToStringContainsCorrectLabelsAndData() {
         String expected =
                 System.lineSeparator() +
-                        "ID: " + jobFullConstructor.getId() + "\n" +
-                        "Name: " + jobFullConstructor.getName() + "\n" +
-                        "Employer: " + jobFullConstructor.getEmployer() + "\n" +
-                        "Location: " + jobFullConstructor.getLocation() + "\n" +
-                        "Position Type: " + jobFullConstructor.getPositionType() + "\n" +
-                        "Core Competency: " + jobFullConstructor.getCoreCompetency() + "\n" +
+                        "ID: " + "13" + "\n" +
+                        "Name: " + "Product tester" + "\n" +
+                        "Employer: " + "ACME" + "\n" +
+                        "Location: " + "Desert" + "\n" +
+                        "Position Type: " + "Quality control" + "\n" +
+                        "Core Competency: " + "Persistence" + "\n" +
                         System.lineSeparator();
+
         Assert.assertEquals(expected, jobFullConstructor.toString());
     }
     @Test
    public void testToStringHandlesEmptyField() {
         String expected =
                 System.lineSeparator() +
-                        "ID: " + jobEmptyField.getId() + "\n" +
-                        "Name: " + jobEmptyField.getName() + "\n" +
-                        "Employer: " + jobEmptyField.getEmployer() + "\n" +
-                        "Location: " + jobEmptyField.getLocation() + "\n" +
-                        "Position Type: " + jobEmptyField.getPositionType() + "\n" +
+                        "ID: " + "10" + "\n" +
+                        "Name: " + "Product tester" + "\n" +
+                        "Employer: " + "ACME" + "\n" +
+                        "Location: " + "Desert" + "\n" +
+                        "Position Type: " + "Quality control" + "\n" +
                         "Core Competency: " + "Data not available" + "\n" +
                         System.lineSeparator();
-        assertTrue(jobEmptyField.toString().endsWith("Data not available" + "\n" +
-                System.lineSeparator()));
+        assertEquals(expected, jobEmptyField.toString());
     }
 
 
