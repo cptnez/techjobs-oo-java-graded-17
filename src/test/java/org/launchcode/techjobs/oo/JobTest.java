@@ -58,11 +58,11 @@ public class JobTest {
         String expected =
                 System.lineSeparator() +
                         "ID: " + jobFullConstructor.getId() + "\r\n" +
-                        "Name: " + "Product tester" + "\r\n" +
-                        "Employer: " + "ACME" + "\r\n" +
-                        "Location: " + "Desert" + "\r\n" +
-                        "Position Type: " + "Quality control" + "\r\n" +
-                        "Core Competency: " + "Persistence" + "\r\n" +
+                        "Name: " + jobFullConstructor.getName() + "\r\n" +
+                        "Employer: " + jobFullConstructor.getEmployer() + "\r\n" +
+                        "Location: " + jobFullConstructor.getLocation() + "\r\n" +
+                        "Position Type: " + jobFullConstructor.getPositionType() + "\r\n" +
+                        "Core Competency: " + jobFullConstructor.getCoreCompetency() + "\r\n" +
                         System.lineSeparator();
 
         assertEquals(expected, jobFullConstructor.toString());
@@ -72,10 +72,10 @@ public class JobTest {
         String expected =
                 System.lineSeparator() +
                         "ID: " + jobEmptyField.getId() + "\r\n" +
-                        "Name: " + "Product tester" + "\r\n" +
-                        "Employer: " + "ACME" + "\r\n" +
-                        "Location: " + "Desert" + "\r\n" +
-                        "Position Type: " + "Quality control" + "\r\n" +
+                        "Name: " + jobEmptyField.getName() + "\r\n" +
+                        "Employer: " + jobEmptyField.getEmployer() + "\r\n" +
+                        "Location: " + jobEmptyField.getLocation() + "\r\n" +
+                        "Position Type: " + jobEmptyField.getPositionType() + "\r\n" +
                         "Core Competency: " + "Data not available" + "\r\n" +
                         System.lineSeparator();
         assertEquals(expected, jobEmptyField.toString());
