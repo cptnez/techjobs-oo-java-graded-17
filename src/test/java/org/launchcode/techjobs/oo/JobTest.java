@@ -57,26 +57,26 @@ public class JobTest {
     public void testToStringContainsCorrectLabelsAndData() {
         String expected =
                 System.lineSeparator() +
-                        "ID: " + jobFullConstructor.getId() + "\n" +
-                        "Name: " + "Product tester" + "\n" +
-                        "Employer: " + "ACME" + "\n" +
-                        "Location: " + "Desert" + "\n" +
-                        "Position Type: " + "Quality control" + "\n" +
-                        "Core Competency: " + "Persistence" + "\n" +
+                        "ID: " + jobFullConstructor.getId() + "\r\n" +
+                        "Name: " + "Product tester" + "\r\n" +
+                        "Employer: " + "ACME" + "\r\n" +
+                        "Location: " + "Desert" + "\r\n" +
+                        "Position Type: " + "Quality control" + "\r\n" +
+                        "Core Competency: " + "Persistence" + "\r\n" +
                         System.lineSeparator();
 
-        Assert.assertEquals(expected, jobFullConstructor.toString());
+        assertEquals(expected, jobFullConstructor.toString());
     }
     @Test
    public void testToStringHandlesEmptyField() {
         String expected =
                 System.lineSeparator() +
-                        "ID: " + jobEmptyField.getId() + "\n" +
-                        "Name: " + "Product tester" + "\n" +
-                        "Employer: " + "ACME" + "\n" +
-                        "Location: " + "Desert" + "\n" +
-                        "Position Type: " + "Quality control" + "\n" +
-                        "Core Competency: " + "Data not available" + "\n" +
+                        "ID: " + jobEmptyField.getId() + "\r\n" +
+                        "Name: " + "Product tester" + "\r\n" +
+                        "Employer: " + "ACME" + "\r\n" +
+                        "Location: " + "Desert" + "\r\n" +
+                        "Position Type: " + "Quality control" + "\r\n" +
+                        "Core Competency: " + "Data not available" + "\r\n" +
                         System.lineSeparator();
         assertEquals(expected, jobEmptyField.toString());
     }
