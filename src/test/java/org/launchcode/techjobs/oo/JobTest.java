@@ -1,5 +1,6 @@
 package org.launchcode.techjobs.oo;
 
+import org.junit.Assert;
 import org.junit.Test;
 
 import javax.crypto.spec.PSource;
@@ -67,7 +68,7 @@ public class JobTest {
                         "Position Type: " + jobFullConstructor.getPositionType() + "\n" +
                         "Core Competency: " + jobFullConstructor.getCoreCompetency() + "\n" +
                         System.lineSeparator();
-        assertEquals(expected, jobFullConstructor.toString());
+        Assert.assertEquals(expected, jobFullConstructor.toString());
     }
     @Test
    public void testToStringHandlesEmptyField() {
@@ -80,7 +81,7 @@ public class JobTest {
                         "Position Type: " + jobEmptyField.getPositionType() + "\n" +
                         "Core Competency: " + "Data not available" + "\n" +
                         System.lineSeparator();
-        assertEquals(expected, jobEmptyField.toString());
+        Assert.assertEquals(expected, jobEmptyField.toString());
     }
 
 
