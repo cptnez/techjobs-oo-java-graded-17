@@ -30,7 +30,6 @@ public class JobTest {
             new CoreCompetency("")) ;
 
 
-
     @Test
     public void testSettingJobId(){
         assertNotEquals(jobOne.getId(), jobTwo.getId());
@@ -53,16 +52,12 @@ public class JobTest {
     public void testJobsForEquality() {
         assertNotEquals(jobFullConstructor.getId(), jobFullConstructorTwo.getId());
     }
-    @Test
-    public void testToStringStartsAndEndsWithNewLine() {
-        assertTrue(jobFullConstructor.toString().startsWith(System.lineSeparator()));
-        assertTrue(jobFullConstructor.toString().endsWith(System.lineSeparator()));
-    }
+
     @Test
     public void testToStringContainsCorrectLabelsAndData() {
         String expected =
                 System.lineSeparator() +
-                        "ID: " + "13" + "\n" +
+                        "ID: " + jobFullConstructor.getId() + "\n" +
                         "Name: " + "Product tester" + "\n" +
                         "Employer: " + "ACME" + "\n" +
                         "Location: " + "Desert" + "\n" +
@@ -76,7 +71,7 @@ public class JobTest {
    public void testToStringHandlesEmptyField() {
         String expected =
                 System.lineSeparator() +
-                        "ID: " + "10" + "\n" +
+                        "ID: " + jobEmptyField.getId() + "\n" +
                         "Name: " + "Product tester" + "\n" +
                         "Employer: " + "ACME" + "\n" +
                         "Location: " + "Desert" + "\n" +
@@ -85,7 +80,11 @@ public class JobTest {
                         System.lineSeparator();
         assertEquals(expected, jobEmptyField.toString());
     }
-
+    @Test
+    public void testToStringStartsAndEndsWithNewLine() {
+        assertTrue(jobFullConstructor.toString().startsWith(System.lineSeparator()));
+        assertTrue(jobFullConstructor.toString().endsWith(System.lineSeparator()));
+    }
 
 
 }
