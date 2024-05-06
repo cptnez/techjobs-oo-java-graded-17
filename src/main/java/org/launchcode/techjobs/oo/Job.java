@@ -50,22 +50,6 @@ public class Job {
     @Override
     public String toString() {
 
-        if(getName().isEmpty()){
-            name = "Data not available";
-        };
-        if(getEmployer().toString().isEmpty()){
-            employer.setValue("Data not available");
-        };
-        if(getLocation().toString().isEmpty()){
-            location.setValue("Data not available");
-        };
-        if(getPositionType().toString().isEmpty()){
-            positionType.setValue("Data not available");
-        }
-        if(getCoreCompetency().toString().isEmpty()){
-            coreCompetency.setValue("Data not available");
-        }
-
         return System.lineSeparator() +
                 "ID: " + id + "\n"+
                 "Name: " + name + "\n" +

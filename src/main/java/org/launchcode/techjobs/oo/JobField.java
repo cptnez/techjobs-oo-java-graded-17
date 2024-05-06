@@ -22,6 +22,7 @@ public abstract class JobField {
 
     @Override
     public String toString() {
+        if(getValue().isEmpty()){setValue("Data not available");}
         return value;
     }
 
