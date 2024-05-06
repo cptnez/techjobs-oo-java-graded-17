@@ -67,11 +67,11 @@ public class Job {
         }
 
         return System.lineSeparator() +
-                "ID: " + id + "\r\n"+
-                "Name: " + name + "\r\n" +
-                "Employer: " + employer + "\r\n" +
-                "Location: " + location + "\r\n" +
-                "Position Type: " + positionType + "\r\n"+
+                "ID: " + id + "\n"+
+                "Name: " + name + "\n" +
+                "Employer: " + employer + "\n" +
+                "Location: " + location + "\n" +
+                "Position Type: " + positionType + "\n"+
                 "Core Competency: " + coreCompetency +
                 System.lineSeparator();
     }

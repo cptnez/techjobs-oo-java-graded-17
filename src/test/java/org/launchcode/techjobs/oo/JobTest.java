@@ -57,11 +57,11 @@ public class JobTest {
     public void testToStringContainsCorrectLabelsAndData() {
         String expected =
                 System.lineSeparator() +
-                        "ID: " + jobFullConstructor.getId() + "\r\n" +
-                        "Name: " + jobFullConstructor.getName() + "\r\n" +
-                        "Employer: " + jobFullConstructor.getEmployer() + "\r\n" +
-                        "Location: " + jobFullConstructor.getLocation() + "\r\n" +
-                        "Position Type: " + jobFullConstructor.getPositionType() + "\r\n" +
+                        "ID: " + jobFullConstructor.getId() + "\n" +
+                        "Name: " + jobFullConstructor.getName() + "\n" +
+                        "Employer: " + jobFullConstructor.getEmployer() + "\n" +
+                        "Location: " + jobFullConstructor.getLocation() + "\n" +
+                        "Position Type: " + jobFullConstructor.getPositionType() + "\n" +
                         "Core Competency: " + jobFullConstructor.getCoreCompetency() +
                         System.lineSeparator();
 
@@ -71,11 +71,11 @@ public class JobTest {
    public void testToStringHandlesEmptyField() {
         String expected =
                 System.lineSeparator() +
-                        "ID: " + jobEmptyField.getId() + "\r\n" +
-                        "Name: " + jobEmptyField.getName() + "\r\n" +
-                        "Employer: " + jobEmptyField.getEmployer() + "\r\n" +
-                        "Location: " + jobEmptyField.getLocation() + "\r\n" +
-                        "Position Type: " + jobEmptyField.getPositionType() + "\r\n" +
+                        "ID: " + jobEmptyField.getId() + "\n" +
+                        "Name: " + jobEmptyField.getName() + "\n" +
+                        "Employer: " + jobEmptyField.getEmployer() + "\n" +
+                        "Location: " + jobEmptyField.getLocation() + "\n" +
+                        "Position Type: " + jobEmptyField.getPositionType() + "\n" +
                         "Core Competency: " + "Data not available" +
                         System.lineSeparator();
         assertEquals(expected, jobEmptyField.toString());
