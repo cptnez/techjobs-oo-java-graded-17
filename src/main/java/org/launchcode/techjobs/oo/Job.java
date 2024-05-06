@@ -72,7 +72,7 @@ public class Job {
                 "Employer: " + employer + "\r\n" +
                 "Location: " + location + "\r\n" +
                 "Position Type: " + positionType + "\r\n"+
-                "Core Competency: " + coreCompetency + "\r\n" +
+                "Core Competency: " + coreCompetency +
                 System.lineSeparator();
     }
 
